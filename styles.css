@@ -561,6 +561,26 @@ h2 {
   margin-top: 0.1rem;
 }
 
+.projects-cta {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 820px) {
+  .projects-cta {
+    margin-top: 1.25rem;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+
+.projects-cta-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
 /* Contact */
 .contact-grid {
   display: grid;
