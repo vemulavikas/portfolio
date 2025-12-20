@@ -3,98 +3,291 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Vemula Vikas · Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Vemula Vikas — web developer. Projects, skills, and contact information."
+    />
+    <meta name="theme-color" content="#0b1220" />
+
+    <meta property="og:title" content="Vemula Vikas · Portfolio" />
+    <meta
+      property="og:description"
+      content="Projects, skills, and contact information."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="vikki.jpg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo-container">
-          <img class="pic" src="vikki.jpg" alt="pic" />
-          <h1 class="logo">VIKAS.V</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <img class="avatar" src="vikki.jpg" alt="Portrait of Vemula Vikas" />
+          <span class="brand-name">VIKAS.V</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true" class="nav-toggle-icon"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-      <div class="container">
-        <h1>Welcome, I'm <span class="highlight">Vemula Vikas</span></h1>
-        <p>A passionate <span class="highlight">Web Developer</span></p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          As a computer science engineering student, I aim to secure an
-          internship or entry-level position where I can apply my proficiency in
-          languages like C and Java, along with a solid grasp of data
-          structures, to actively contribute to the technological growth and
-          innovation of a forward-thinking organization
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-          <div class="skill">HTML</div>
-          <div class="skill">CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Java</div>
-          <div class="skill">c</div>
-          <div class="skill">Python</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-          <div class="project">
-            <a href="https://ai-resume-gpt.vercel.app/"> <h3>AI-Based-Resume-Enhancer</h3></a>
+    <main id="main">
+      <!-- Hero -->
+      <header class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Web Developer</p>
+            <h1>
+              Hi, I’m <span class="gradient-text">Vemula Vikas</span>.
+            </h1>
+            <p class="lede">
+              I build clean, responsive web experiences and enjoy turning ideas
+              into fast, user-friendly products.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View projects</a>
+              <a href="#resume" class="btn">Resume</a>
+              <a href="#contact" class="btn btn-ghost">Contact</a>
+            </div>
           </div>
-          <div class="project">
-            <a href="https://github.com/vemulavikas/Educational-Blog-platform"><h3>Educational-Blog-Platform</h3></a>
-          </div>
-          <div class="project">
-            <a href="https://github.com/vemulavikas/Quizz-Application"><h3>Quizz-Application</h3></a>
+
+          <div class="hero-card" aria-label="Quick profile">
+            <img class="hero-avatar" src="vikki.jpg" alt="Portrait of Vemula Vikas" />
+            <div>
+              <p class="hero-name">Vemula Vikas</p>
+              <p class="hero-meta">CSE Student · India</p>
+              <p class="hero-meta">Open to work</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: vemula.vikky57@gmail.com</p>
-        <p>Phone: +91 9849900586</p>
-      </div>
-    </section>
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2>About</h2>
+            <p class="section-subtitle">A quick intro and what I’m looking for.</p>
+          </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Your V.V All rights reserved.</p>
-      </div>
-    </footer>
+          <div class="about-grid">
+            <div class="card card-soft">
+              <p>
+                As a Computer Science Engineering student, I’m looking for an
+                internship or entry-level role where I can apply my proficiency
+                in C and Java, along with strong fundamentals in data structures,
+                to contribute to the growth and innovation of a forward-thinking
+                organization.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Highlights</h3>
+              <ul class="checklist">
+                <li>Responsive UI development</li>
+                <li>Strong CS fundamentals</li>
+                <li>Clean, maintainable code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p class="section-subtitle">Tools I use to build and ship.</p>
+          </div>
+          <div class="skills-grid" role="list">
+            <div class="pill" role="listitem">HTML</div>
+            <div class="pill" role="listitem">CSS</div>
+            <div class="pill" role="listitem">JavaScript</div>
+            <div class="pill" role="listitem">Java</div>
+            <div class="pill" role="listitem">C</div>
+            <div class="pill" role="listitem">Python</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="section-subtitle">A few things I’ve built recently.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project card">
+              <div class="project-top">
+                <h3 class="project-title">AI-Based Resume Enhancer</h3>
+                <p class="project-desc">
+                  A web app experience focused on improving resume text with AI-assisted suggestions.
+                </p>
+              </div>
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">Web</span>
+                <span class="tag">AI</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary" target="_blank" rel="noreferrer" href="https://ai-resume-gpt.vercel.app/">Live demo</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3 class="project-title">Educational Blog Platform</h3>
+                <p class="project-desc">
+                  A blog-style platform for sharing educational content and organizing posts.
+                </p>
+              </div>
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">Web</span>
+                <span class="tag">Content</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="btn btn-ghost"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/vemulavikas/Educational-Blog-platform"
+                  >GitHub</a
+                >
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3 class="project-title">Quiz Application</h3>
+                <p class="project-desc">
+                  An interactive quiz app with a simple, fast UI.
+                </p>
+              </div>
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">JavaScript</span>
+                <span class="tag">UI</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="btn btn-ghost"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/vemulavikas/Quizz-Application"
+                  >GitHub</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section class="section" id="resume">
+        <div class="container">
+          <div class="section-head">
+            <h2>Resume</h2>
+            <p class="section-subtitle">
+              Download a PDF copy or view it directly in your browser.
+            </p>
+          </div>
+
+          <div class="resume-grid">
+            <div class="card">
+              <h3 class="card-title">PDF</h3>
+              <p class="muted">
+                Put your resume file in this repo as <strong>resume.pdf</strong>
+                (same folder as <strong>index.html</strong>).
+              </p>
+              <div class="resume-actions">
+                <a class="btn btn-primary" href="resume.pdf" download>Download resume</a>
+                <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
+              </div>
+            </div>
+
+            <div class="card card-soft">
+              <div class="resume-frame-wrap">
+                <iframe
+                  class="resume-frame"
+                  title="Resume PDF"
+                  src="resume.pdf"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <p class="muted resume-fallback">
+                If the preview doesn’t load, use the buttons to open/download.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="section-subtitle">Want to work together? Let’s talk.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card">
+              <h3 class="card-title">Get in touch</h3>
+              <p class="muted">Fastest way: email.</p>
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="mailto:vemula.vikky57@gmail.com">Email me</a>
+                <a class="btn btn-ghost" href="tel:+919849900586">Call</a>
+                <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://github.com/vemulavikas">GitHub</a>
+              </div>
+            </div>
+
+            <div class="card card-soft">
+              <dl class="contact-list">
+                <div>
+                  <dt>Email</dt>
+                  <dd><a href="mailto:vemula.vikky57@gmail.com">vemula.vikky57@gmail.com</a></dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd><a href="tel:+919849900586">+91 98499 00586</a></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>© <span id="year">2025</span> Vemula Vikas. All rights reserved.</p>
+          <a class="to-top" href="#home">Back to top</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
 
