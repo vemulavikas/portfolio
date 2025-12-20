@@ -581,6 +581,42 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* Education timeline */
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 920px) {
+  .timeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.timeline-meta {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.68);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.timeline-title {
+  margin-top: 0.45rem;
+  font-size: 1.12rem;
+}
+
+/* Simple card grids */
+.list-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 820px) {
+  .list-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Contact */
 .contact-grid {
   display: grid;
@@ -693,8 +729,11 @@ h2 {
 /* Anchor offset for sticky nav */
 #home,
 #about,
+#education,
 #skills,
 #projects,
+#certifications,
+#achievements,
 #resume,
 #contact {
   scroll-margin-top: calc(var(--nav-h) + 1rem);
